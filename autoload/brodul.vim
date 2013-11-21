@@ -68,12 +68,12 @@ let g:PIPA_ADDONS = {
   \ }
 
 
+let g:syntastic_javascript_checker = '/home/brodul/tools/js-dev/node-jslint/bin/jslint.js'
 
 " TODO: {{{
 " cscope
 " ['Scratch', ['default']],
 " Utl
-" let g:syntastic_javascript_checker = '/home/rok/node_modules/jshint/bin/hint'
 " Python-mode {{{
 "
 "function! Addons_Python_mode_klen ()
