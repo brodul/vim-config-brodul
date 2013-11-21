@@ -251,7 +251,7 @@ filetype plugin indent on
 "colorscheme wombat
 "colorscheme solarized
 colorscheme twilight
-set background=dark
+"set background=dark
 "set background=light
 
 " Highlight VCS conflict markers
