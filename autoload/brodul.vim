@@ -430,6 +430,9 @@ inoremap # X<BS>#
 nnoremap Ajk <nop>
 nnoremap A<esc> <nop>
 
+" Fuck you, increment key
+nnoremap <C-a> <nop>
+
 " }}}
 " Various filetype-specific stuff ----------------------------------------- {{{
 " C {{{
