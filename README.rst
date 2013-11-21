@@ -1,5 +1,7 @@
 ::
 
+    This is stollen from a friend `garbas`.
+
 bootstrap VAM
 =============
 
