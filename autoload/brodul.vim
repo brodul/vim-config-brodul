@@ -50,16 +50,6 @@ function! Addons_delimitMate ()
 endfunction
 
 " }}}
-" Snipmate {{{
-"
-function! Addons_snipmate ()
-  imap <S-Tab> <Plug>snipMateNextOrTrigger
-  smap <S-Tab> <Plug>snipMateNextOrTrigger
-  imap <Nop> <Plug>snipMateBack
-  imap <Nop> <Plug>snipMateBack
-endfunction
-
-" }}}
 "
 " }}}
 " My Addons {{{
@@ -70,15 +60,13 @@ let g:PIPA_ADDONS = {
       \ 'unimpaired': { 'categories': [ 'default' ] },
       \ 'Tabular': { 'categories': [ 'default' ] },
       \ 'ctrlp': { 'categories': [ 'default' ], 'config': function('Addons_ctrlp') },
+      \ 'UltiSnips': { 'categories': [ 'default' ] },
+      \ 'Supertab': { 'categories': [ 'default' ] },
       \ 'vim-orgmode': { 'categories': [ 'default' ] },
       \ 'delimitMate': { 'categories': [ 'default' ], 'config': function('Addons_delimitMate')},
       \ 'Solarized': { 'categories': [ 'default' ], 'config': function('Addons_Solarized') },
       \ 'twilight': { 'categories': [ 'default' ] },
   \ }
-
-"" Broken
-""\ 'snipmate': { 'categories': [ 'default' ], 'config': function('Addons_snipmate') },
-""\ 'snipmate-snippets': { 'categories': [ 'default' ] },
 
 let g:syntastic_javascript_checker = '/home/brodul/tools/js-dev/node-jslint/bin/jslint.js'
 
