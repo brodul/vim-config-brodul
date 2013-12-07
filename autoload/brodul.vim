@@ -9,6 +9,16 @@ fun! brodul#config()
 
 " Addons {{{
 " My Addons Custom Config {{{
+" Solarized {{{
+
+function! Addons_Solarized ()
+  call togglebg#map("<F6>")
+  let g:solarized_termcolors = 256
+  let g:solarized_hitrail = 1
+  let g:solarized_diffmode = "high"
+endfunction
+
+" }}}
 " ctrlp {{{
 
 function! Addons_ctrlp()
@@ -30,16 +40,6 @@ function! Addons_ctrlp()
         \ }
 
   nnoremap <leader>. :CtrlPBuffer<cr>
-endfunction
-
-" }}}
-" Solarized {{{
-
-function! Addons_Solarized ()
-  call togglebg#map("<LEADER>C")
-  let g:solarized_termcolors = 256
-  let g:solarized_hitrail = 1
-  let g:solarized_diffmode = "high"
 endfunction
 
 " }}}
