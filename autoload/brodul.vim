@@ -70,14 +70,15 @@ let g:PIPA_ADDONS = {
       \ 'unimpaired': { 'categories': [ 'default' ] },
       \ 'Tabular': { 'categories': [ 'default' ] },
       \ 'ctrlp': { 'categories': [ 'default' ], 'config': function('Addons_ctrlp') },
-      \ 'snipmate': { 'categories': [ 'default' ], 'config': function('Addons_snipmate') },
-      \ 'snipmate-snippets': { 'categories': [ 'default' ] },
       \ 'vim-orgmode': { 'categories': [ 'default' ] },
       \ 'delimitMate': { 'categories': [ 'default' ], 'config': function('Addons_delimitMate')},
       \ 'Solarized': { 'categories': [ 'default' ], 'config': function('Addons_Solarized') },
       \ 'twilight': { 'categories': [ 'default' ] },
   \ }
 
+"" Broken
+""\ 'snipmate': { 'categories': [ 'default' ], 'config': function('Addons_snipmate') },
+""\ 'snipmate-snippets': { 'categories': [ 'default' ] },
 
 let g:syntastic_javascript_checker = '/home/brodul/tools/js-dev/node-jslint/bin/jslint.js'
 
