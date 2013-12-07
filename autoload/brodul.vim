@@ -50,16 +50,27 @@ function! Addons_delimitMate ()
 endfunction
 
 " }}}
+" Snipmate {{{
+"
+function! Addons_snipmate ()
+  imap <S-Tab> <Plug>snipMateNextOrTrigger
+  smap <S-Tab> <Plug>snipMateNextOrTrigger
+  imap <Nop> <Plug>snipMateBack
+  imap <Nop> <Plug>snipMateBack
+endfunction
+
+" }}}
 "
 " }}}
 " My Addons {{{
 
-
+" unimpaired --- complementary pairs of mappings
+" Tabular --- Tabularize 
 let g:PIPA_ADDONS = {
       \ 'unimpaired': { 'categories': [ 'default' ] },
       \ 'Tabular': { 'categories': [ 'default' ] },
       \ 'ctrlp': { 'categories': [ 'default' ], 'config': function('Addons_ctrlp') },
-      \ 'snipmate': { 'categories': [ 'default' ] },
+      \ 'snipmate': { 'categories': [ 'default' ], 'config': function('Addons_snipmate') },
       \ 'snipmate-snippets': { 'categories': [ 'default' ] },
       \ 'vim-orgmode': { 'categories': [ 'default' ] },
       \ 'delimitMate': { 'categories': [ 'default' ], 'config': function('Addons_delimitMate')},
@@ -108,7 +119,7 @@ let g:syntastic_javascript_checker = '/home/brodul/tools/js-dev/node-jslint/bin/
 "
 " }}}
 "
-" addons to rethink 
+" addons to rethink
 "    \ ['tslime', ['default']],
 "    \ ['delimitMate', ['default']],
 "    \ ['Markdown', ['default']], " requires old snipMate
@@ -613,7 +624,7 @@ augroup END
 
 " }}}
 " }}}
-" Convenience mappings ----------------------------------------------------- {{{
+
 
 nmap <LEADER>L :set list!<CR>
 map <SILENT> <LEADER>S :set spell!<CR>
