@@ -488,7 +488,7 @@ augroup END
 augroup ft_html
     au!
 
-    au BufNewFile,BufRead *.html *.pt *.zcml setlocal filetype=html
+    au BufNewFile,BufRead *.html *.pt *.zcml *.jinja2 setlocal filetype=html
     au FileType html setlocal foldmethod=manual
     au Filetype html setlocal ts=2 sts=2 sw=2
 
