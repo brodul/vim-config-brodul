@@ -48,7 +48,15 @@ endfunction
 function! Addons_delimitMate ()
 " Add filetypes you want to ignore
 endfunction
-
+" }}}
+"
+" fontsize {{{
+function! Addons_fontsize ()
+  nmap <silent> <SID>DisableBegin           <Plug>FontsizeBegin
+  nmap <silent> +                           <Plug>FontsizeInc
+  nmap <silent> -                           <Plug>FontsizeDec
+  nmap <silent> <SID>DisableFontsizeDefault <Plug>FontsizeDefault
+endfunction
 " }}}
 "
 " }}}
@@ -66,6 +74,7 @@ let g:PIPA_ADDONS = {
       \ 'delimitMate': { 'categories': [ 'default' ], 'config': function('Addons_delimitMate')},
       \ 'Solarized': { 'categories': [ 'default' ], 'config': function('Addons_Solarized') },
       \ 'twilight': { 'categories': [ 'default' ] },
+      \ 'fontsize': { 'categories': [ 'default' ], 'config': function('Addons_fontsize') },
   \ }
 
 let g:syntastic_javascript_checkers = ['jshint']
