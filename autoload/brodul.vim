@@ -68,7 +68,8 @@ let g:PIPA_ADDONS = {
       \ 'twilight': { 'categories': [ 'default' ] },
   \ }
 
-let g:syntastic_javascript_checker = '/home/brodul/tools/js-dev/node-jslint/bin/jslint.js'
+let g:syntastic_javascript_checkers = ['jshint']
+let g:syntastic_javascript_jshint_conf =  '/home/' + $USER + '/.jshintrc'
 
 " TODO: {{{
 " cscope
